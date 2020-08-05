@@ -18,3 +18,15 @@ Route::get('/register', 'AuthController@form');
 Route::get('/welcome', 'AuthController@sukses');
 
 Route::post('/welcome', 'AuthController@sukses_post');
+
+Route::get('/master', function() {
+	return view('adminlte.master');
+});
+
+Route::get('/', function() {
+	return view('tugasdatatables.index');
+});
+
+Route::get('/data-tables', function() {
+	return view('tugasdatatables.datables');
+});
